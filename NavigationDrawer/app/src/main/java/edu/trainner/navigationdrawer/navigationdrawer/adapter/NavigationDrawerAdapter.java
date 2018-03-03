@@ -5,15 +5,15 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 import java.util.Collections;
+import java.util.List;
 
-/**
- * Created by bruno on 03/03/2018.
- */
+import edu.trainner.navigationdrawer.navigationdrawer.model.NavDrawerItem;
+
 
 public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDrawerAdapter.MyViewHolder> {
-
     List<NavDrawerItem> data = Collections.emptyList();
     private LayoutInflater inflater;
     private Context context;
@@ -55,5 +55,4 @@ public class NavigationDrawerAdapter extends RecyclerView.Adapter<NavigationDraw
             title = (TextView) itemView.findViewById(R.id.title);
         }
     }
-
 }

@@ -1,19 +1,15 @@
 package edu.trainner.navigationdrawer.navigationdrawer.activity;
 
+
 import android.app.Activity;
-import android.app.Fragment;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import edu.trainner.navigationdrawer.navigationdrawer.R;
 
-/**
- * Created by bruno on 03/03/2018.
- */
-
-public class HomeFragment  extends Fragment{
+public class HomeFragment extends Fragment {
 
     public HomeFragment() {
         // Requisição de um empty public constructor
@@ -44,5 +40,4 @@ public class HomeFragment  extends Fragment{
     public void onDetach() {
         super.onDetach();
     }
-
 }

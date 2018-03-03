@@ -1,8 +1,9 @@
 package edu.trainner.navigationdrawer.navigationdrawer.activity;
 
-import android.app.Fragment;
+
 import android.content.Context;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -15,13 +16,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import java.util.ArrayList;
+import java.util.List;
 
-import edu.trainner.navigationdrawer.navigationdrawer.R;
 import edu.trainner.navigationdrawer.navigationdrawer.adapter.NavigationDrawerAdapter;
+import edu.trainner.navigationdrawer.navigationdrawer.model.NavDrawerItem;
 
-/**
- * Created by bruno on 03/03/2018.
- */
 
 public class FragmentDrawer extends Fragment {
 
@@ -178,5 +177,4 @@ public class FragmentDrawer extends Fragment {
     public interface FragmentDrawerListener {
         public void onDrawerItemSelected(View view, int position);
     }
-
 }
